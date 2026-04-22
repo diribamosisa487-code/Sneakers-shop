@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oromia Sneakers</title>
+    <style>
+        body { font-family: Arial; margin: 0; padding: 0; }
+        nav {background: black; padding: 15px; text-align: center;position: relative;z-index: 2; }
+        nav a {color:orange;margin: 15px;text-decoration: none;font-weight: bold;}
+        .hero {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+        }
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .hero .overlay {
+            position: relative;
+            z-index: 1;
+            background: rgba(0,0,0,0.5);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button { background: orange; padding: 10px 20px; border: none; border-radius: 20px; cursor: pointer; font-weight: bold; font-size: 16px; }
+        .products { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; padding: 30px; background: #f5f5f5; }
+        .card { background: white; width: 250px; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; }
+        .promo-video {
+            text-align: center;
+            padding: 30px;
+            background: #222;
+            color: white;
+        }
+        .promo-video video {
+            width:100%;
+            max-width: 200px;
+            border-radius: 12px;
+            margin-top: 10px;
+        }
+        footer { background: black; color: gray; text-align: center; padding: 15px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <b style="color:orange; font-size:22px;">👟 OROMIA SNEAKERS</b>
+    <a href="index.html">HOME</a>
+    <a href="products.html">SHOP</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="developers.html">DEVELOPERS</a>
+    <a href="about us.html">ABOUT US</a>
+</nav>
+
+<div class="hero">
+    <video autoplay muted loop>
+        <source src="oromia sneakers .mp4.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+        <h1>Oromia Sneakers</h1>
+        <p>Authentic | Comfort | Style</p>
+        <a href="products.html"><button>Shop Now</button></a>
+    </div>
+</div>
+
+<h2 style="text-align:center; background:#f5f5f5; margin:0; padding-top:30px;">🔥 Best Sellers</h2>
+<div class="products">
+    <div class="card">
+        <img src="7.png.jpeg" alt="sneaker">
+        <h3>Nike Air Jordan 4 Retro</h3>
+        <p>27,000 Birr</p>
+    </div>
+    <div class="card">
+        <img src="4.png (2).jpeg" alt="sneaker">
+        <h3>Anthony Wang Space Candy</h3>
+        <p>21,500 Birr</p>
+    </div>
+    <div class="card">
+        <img src="png..jpeg" alt="sneaker">
+        <h3>Nike Air Force 1</h3>
+        <p>23,000 Birr</p>
+    </div>
+</div>
+
+<div class="promo-video">
+    <h2>👟 See Our Sneakers in Action</h2>
+    <video controls>
+        <source src="Shoes.mp4" type="video/mp4">
+    </video>
+    <p>Experience the comfort of Oromia Sneakers</p>
+</div>
+
+<footer>
+    <p>© 2026 Oromia Sneakers</p>
+</footer>
+
+</body>
+</html>
